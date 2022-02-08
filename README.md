@@ -1,2 +1,4 @@
-# ts-design-patterns
-Design pattern. ts implementations
+# README #
+
+### What is this repository for? ###
+* Design pattern proposals for TS
