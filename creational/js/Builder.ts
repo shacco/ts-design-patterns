@@ -2,36 +2,14 @@ interface IUserObject {
     name: string;
     lastName: string;
     age:number;
-    address?: IAddress;
+    address?: string;
     dni:string;
     sex?: string;
     nationality?:string;
 }
 
-type IUserObject1  = {
-    name: string;
-    lastName: string;
-    age:number;
-    address?: InstanceType<Address>;
-    dni:string;
-    sex?: string;
-    nationality?:string;
-}
 
-interface IAddress{
-    calle: string;
-}
-
-
-class Address implements IAddress{
-    calle:'asd'
-}
-
-interface IUserTypescript extends IUserObject{
-    show: Function;
-}
-
-class UserTypescript implements IUserTypescript {
+class UserTypescript implements IUserObject {
     age: number;
     dni: string;
     lastName: string;
@@ -55,3 +33,8 @@ class UserTypescript implements IUserTypescript {
         console.log({name, lastName, age, address, dni, sex, nationality})
     }
 }
+
+
+export default UserTypescript;
+
+/*Pass and object to the constructor, so you will be able to build it as you wish*/
