@@ -1,16 +1,10 @@
+/*Build the class however you wish*/
 class Singleton {
-    msg: string;
-    constructor(msg) {
-        this.msg = msg;
+    message: string;
+    constructor(message) {
+        this.message = message;
     }
 }
 
-// Propuesta final. Desarrolla tu clase tranquilamente:
-// Exporta un objeto creado
-//Export además la clase para que puedas hacer test unitarios sobre ella
-const exportObject = {
-    Singleton: new Singleton('lorem'),
-    SingletonClass: Singleton
-}
-
-export default exportObject;
+/* Export an instance of the class, it will be in caché so the object won't be chanching */
+export default new Singleton('lorem');
