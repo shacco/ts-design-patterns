@@ -18,8 +18,7 @@ class Dialog implements IDialog{
 
 //Concrete creators
 class WindowsDialog extends Dialog{
-    createButton():IButton{
-        return new WindowsButton();
+    createButton():IButton{        return new WindowsButton();
     }
 }
 class WebDialog extends Dialog{
