@@ -51,6 +51,8 @@ class Convertible implements IConvertible{
 abstract class CarFactory{
     abstract createCar(color: string):ICar;
 }
+
+
 class TruckFactory extends CarFactory{
     createCar(color:string) {
         const truck = new Truck('red');

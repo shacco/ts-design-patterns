@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/shacco/ts-design-patterns#readme",
   "dependencies": {
+    "lodash": "^4.17.21",
     "ts-node": "^10.5.0",
     "typescript": "^4.5.5"
   },
